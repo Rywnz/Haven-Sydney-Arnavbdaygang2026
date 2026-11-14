@@ -78,6 +78,5 @@ sources/0 = SubResource("TileSetAtlasSource_uu6xs")
 [node name="Node2D" type="Node2D" unique_id=1253095446]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=377996899]
-position = Vector2(4, -3)
 tile_set = SubResource("TileSet_rshis")
 format = 2
