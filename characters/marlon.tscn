@@ -30,6 +30,34 @@ region = Rect2(240, 32, 48, 32)
 atlas = ExtResource("1_rq6i5")
 region = Rect2(288, 32, 48, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_rq6i5"]
+atlas = ExtResource("1_rq6i5")
+region = Rect2(0, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5cvp"]
+atlas = ExtResource("1_rq6i5")
+region = Rect2(48, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u2ws5"]
+atlas = ExtResource("1_rq6i5")
+region = Rect2(96, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h3ek6"]
+atlas = ExtResource("1_rq6i5")
+region = Rect2(144, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgax8"]
+atlas = ExtResource("1_rq6i5")
+region = Rect2(192, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0mogr"]
+atlas = ExtResource("1_rq6i5")
+region = Rect2(240, 0, 48, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snfuo"]
+atlas = ExtResource("1_rq6i5")
+region = Rect2(288, 0, 48, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_gxsqa"]
 animations = [{
 "frames": [{
@@ -57,10 +85,36 @@ animations = [{
 "loop": 1,
 "name": &"Run",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rq6i5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5cvp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u2ws5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h3ek6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgax8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0mogr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snfuo")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
 }]
 
 [node name="Marlon" type="AnimatedSprite2D" unique_id=1757351499]
 sprite_frames = SubResource("SpriteFrames_gxsqa")
-animation = &"Run"
-autoplay = "Run"
-frame_progress = 0.4654758
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.8927085
