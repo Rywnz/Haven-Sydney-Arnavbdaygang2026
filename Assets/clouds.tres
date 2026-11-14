@@ -1,0 +1,26 @@
+[gd_resource type="TileSet" format=3 uid="uid://c07oji4pww65w"]
+
+[ext_resource type="Texture2D" uid="uid://dxa47023lts45" path="res://Assets/Cloud Canopy.png" id="1_yos33"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w45eo"]
+texture = ExtResource("1_yos33")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_w45eo")
