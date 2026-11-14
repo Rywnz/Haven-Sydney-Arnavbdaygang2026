@@ -63,4 +63,4 @@ animations = [{
 sprite_frames = SubResource("SpriteFrames_gxsqa")
 animation = &"Run"
 autoplay = "Run"
-frame_progress = 0.4654758
+frame_progress = 0.034829643
