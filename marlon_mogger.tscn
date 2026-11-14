@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bortwiix5leua"]
+
+[ext_resource type="Script" uid="uid://c71lfixssgc3u" path="res://marlon_mogger.gd" id="1_6km4e"]
+[ext_resource type="PackedScene" uid="uid://rtr42vnt7h4x" path="res://marlon.tscn" id="1_wpevg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxsqa"]
+size = Vector2(7, 16)
+
+[node name="Marlon_Mogger" type="CharacterBody2D" unique_id=584658369]
+script = ExtResource("1_6km4e")
+
+[node name="Marlon" parent="." unique_id=1757351499 instance=ExtResource("1_wpevg")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=861858489]
+position = Vector2(0.5, 8)
+shape = SubResource("RectangleShape2D_gxsqa")

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bvucov54n047q"]
 
 [ext_resource type="Texture2D" uid="uid://u31p12gnatue" path="res://Assets/tileset.png" id="1_glv2v"]
+[ext_resource type="PackedScene" uid="uid://bortwiix5leua" path="res://marlon_mogger.tscn" id="1_uu6xs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uu6xs"]
 texture = ExtResource("1_glv2v")
@@ -181,6 +182,9 @@ texture = ExtResource("1_glv2v")
 sources/0 = SubResource("TileSetAtlasSource_glv2v")
 
 [node name="Node2D" type="Node2D" unique_id=1253095446]
+
+[node name="Marlon_Mogger" parent="." unique_id=584658369 instance=ExtResource("1_uu6xs")]
+position = Vector2(93, 179)
 
 [node name="Level" type="TileMap" parent="." unique_id=377996899]
 position = Vector2(305, 3)
