@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bvucov54n047q"]
 
 [ext_resource type="Texture2D" uid="uid://u31p12gnatue" path="res://Assets/tileset.png" id="1_02xqm"]
+[ext_resource type="PackedScene" uid="uid://bortwiix5leua" path="res://marlon_mogger.tscn" id="2_va7m3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uu6xs"]
 texture = ExtResource("1_02xqm")
@@ -9,11 +10,11 @@ texture = ExtResource("1_02xqm")
 16:0/0 = 0
 17:0/0 = 0
 1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.6464825, -4.103286, 8, -3.8065186, 8, 8, -5.2507935, 8)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.4407263, -4.9461155, 8, -5.045038, 8, 8, -5.4407263, 8)
 2:1/0 = 0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.6216507, 8, -5.2151833, 8, 8, -8, 8)
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.045038, 8, -5.045038, 8, 8, -8, 8)
 3:1/0 = 0
-3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.6968193, 5.5317364, -4.6968193, 5.5317364, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.045038, 5.0450363, -5.045038, 4.9461155, 8, -8, 8)
 5:1/0 = 0
 5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.935338, -5.440727, 5.3418045, -5.2428827, 5.143959, 8, -5.4407263, 8)
 8:1/0 = 0
@@ -196,3 +197,6 @@ tile_set = SubResource("TileSet_a7ls8")
 format = 2
 layer_0/z_index = -1
 layer_0/tile_data = PackedInt32Array(721017, 917504, 0, 786553, 917504, 1, 852089, 917504, 2, 917625, 917504, 3, 721018, 983040, 0, 786554, 983040, 1, 852090, 983040, 2, 917626, 983040, 3, 721019, 1048576, 0, 786555, 1048576, 1, 852091, 1048576, 2, 917627, 1048576, 3, 721020, 1114112, 0, 786556, 1114112, 1, 852092, 1114112, 2, 917628, 1114112, 3, 786557, 1179648, 1, 852093, 1179648, 2, 917629, 1179648, 3)
+
+[node name="Marlon_Mogger" parent="." unique_id=584658369 instance=ExtResource("2_va7m3")]
+position = Vector2(86, 173)
