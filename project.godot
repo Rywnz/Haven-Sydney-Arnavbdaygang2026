@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Hypergamysolvers"
+config/name="BP-Rushers"
+config/description="A knight goes from psl 0 to psl 10 by chasing Clavicular around the world"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
