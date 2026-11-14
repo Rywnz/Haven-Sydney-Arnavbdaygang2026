@@ -1,8 +1,9 @@
-[gd_scene format=3 uid="uid://bvucov54n047q"]
+[gd_scene format=3 uid="uid://qyc2c4yrgikh"]
 
 [ext_resource type="Texture2D" uid="uid://u31p12gnatue" path="res://Assets/tileset.png" id="1_02xqm"]
 [ext_resource type="PackedScene" uid="uid://bortwiix5leua" path="res://marlon_mogger.tscn" id="2_va7m3"]
 [ext_resource type="TileSet" uid="uid://c07oji4pww65w" path="res://Assets/clouds.tres" id="3_gvvdy"]
+[ext_resource type="PackedScene" uid="uid://dx0hv4ggis6rl" path="res://kill_zone.tscn" id="4_d1jbf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uu6xs"]
 texture = ExtResource("1_02xqm")
@@ -201,7 +202,7 @@ layer_0/tile_data = PackedInt32Array(721017, 917504, 0, 786553, 917504, 1, 85208
 
 [node name="Marlon_Mogger" parent="." unique_id=584658369 instance=ExtResource("2_va7m3")]
 z_index = -2
-position = Vector2(784, 178)
+position = Vector2(58, 179)
 
 [node name="Camera2D" type="Camera2D" parent="Marlon_Mogger" unique_id=419588120]
 zoom = Vector2(4, 4)
@@ -216,8 +217,13 @@ layer_0/tile_data = PackedInt32Array(1835062, 262144, 2, 1835063, 131072, 0, 183
 
 [node name="ColorRect" type="ColorRect" parent="TileMap" unique_id=51552670]
 z_index = -5
-offset_left = -89.0
-offset_top = -82.0
-offset_right = 2263.0
-offset_bottom = 649.0
+offset_left = -94.0
+offset_top = -63.0
+offset_right = 2258.0
+offset_bottom = 668.0
 color = Color(0.9218295, 0.9747248, 0.9743343, 1)
+
+[node name="KillZone" parent="." unique_id=928650286 instance=ExtResource("4_d1jbf")]
+position = Vector2(531, 520)
+
+[connection signal="body_entered" from="KillZone" to="KillZone" method="_on_body_entered"]

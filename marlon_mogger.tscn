@@ -8,8 +8,10 @@ size = Vector2(7, 16)
 
 [node name="Marlon_Mogger" type="CharacterBody2D" unique_id=584658369]
 script = ExtResource("1_6km4e")
+metadata/_edit_vertical_guides_ = [-2946.0]
 
 [node name="Marlon" parent="." unique_id=1757351499 instance=ExtResource("1_wpevg")]
+frame_progress = 0.69631404
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=861858489]
 position = Vector2(0.5, 8)
