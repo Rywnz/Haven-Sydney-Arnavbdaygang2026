@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://u31p12gnatue" path="res://Assets/tileset.png" id="1_02xqm"]
 [ext_resource type="PackedScene" uid="uid://bortwiix5leua" path="res://marlon_mogger.tscn" id="2_va7m3"]
 [ext_resource type="TileSet" uid="uid://c07oji4pww65w" path="res://Assets/clouds.tres" id="3_gvvdy"]
+[ext_resource type="Script" uid="uid://h4mmjgbnqvdc" path="res://camera_2d.gd" id="3_hi2wx"]
 [ext_resource type="PackedScene" uid="uid://dx0hv4ggis6rl" path="res://kill_zone.tscn" id="4_d1jbf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uu6xs"]
@@ -206,6 +207,7 @@ position = Vector2(58, 179)
 
 [node name="Camera2D" type="Camera2D" parent="Marlon_Mogger" unique_id=419588120]
 zoom = Vector2(4, 4)
+script = ExtResource("3_hi2wx")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=975950771]
 position = Vector2(16, 182)
