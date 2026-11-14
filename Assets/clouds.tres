@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dxa47023lts45" path="res://Assets/Cloud Canopy.png" id="1_yos33"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w45eo"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yos33"]
 texture = ExtResource("1_yos33")
 0:0/0 = 0
 1:0/0 = 0
@@ -23,4 +23,4 @@ texture = ExtResource("1_yos33")
 5:2/0 = 0
 
 [resource]
-sources/0 = SubResource("TileSetAtlasSource_w45eo")
+sources/1 = SubResource("TileSetAtlasSource_yos33")

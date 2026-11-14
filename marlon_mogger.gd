@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var speed: float = 100.0
-@export var jump_velocity: float = -250.0
+@export var jump_velocity: float = -300.0
 @export var gravity: float = 900.0
 
 @onready var anim: AnimatedSprite2D = $Marlon
@@ -15,7 +15,8 @@ func _physics_process(delta: float) -> void:
 	# Jump (only when standing on the ground)
 	if Input.is_action_just_pressed("up") and is_on_floor():
 		velocity.y = jump_velocity
-
+	if Input.is_action_just_released("up") and velocity.y < 0:
+		velocity.y = jump_velocity / 4
 	# Left / right movement
 	var dir_x := Input.get_axis("left", "right")
 	velocity.x = dir_x * speed
