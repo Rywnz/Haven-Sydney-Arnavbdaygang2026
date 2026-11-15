@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cwk7al8pgfcrl" path="res://Assets/SewerTilesAnimation.png" id="1_16vqg"]
 [ext_resource type="TileSet" uid="uid://bmmieqpnfunst" path="res://Assets/SewerTiles.tres" id="1_uiaec"]
+[ext_resource type="PackedScene" uid="uid://bortwiix5leua" path="res://marlon_mogger.tscn" id="3_aky0p"]
+[ext_resource type="Script" uid="uid://h4mmjgbnqvdc" path="res://camera_2d.gd" id="4_tuelc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x2u3o"]
 atlas = ExtResource("1_16vqg")
@@ -124,3 +126,11 @@ z_index = 2
 position = Vector2(463, 103)
 sprite_frames = SubResource("SpriteFrames_rshis")
 frame_progress = 0.42048874
+
+[node name="Marlon_Mogger" parent="." unique_id=584658369 groups=["Marlon_Mogger"] instance=ExtResource("3_aky0p")]
+z_index = 1
+position = Vector2(55, 81)
+
+[node name="Camera2D" type="Camera2D" parent="Marlon_Mogger" unique_id=1968581108]
+zoom = Vector2(4, 4)
+script = ExtResource("4_tuelc")

@@ -5,6 +5,7 @@
 [ext_resource type="TileSet" uid="uid://c07oji4pww65w" path="res://Assets/clouds.tres" id="3_gvvdy"]
 [ext_resource type="Script" uid="uid://h4mmjgbnqvdc" path="res://camera_2d.gd" id="3_hi2wx"]
 [ext_resource type="PackedScene" uid="uid://dx0hv4ggis6rl" path="res://kill_zone.tscn" id="4_d1jbf"]
+[ext_resource type="PackedScene" uid="uid://dc3w871urd4a0" path="res://Level_1_teleporter.tscn" id="5_1405j"]
 [ext_resource type="PackedScene" uid="uid://c0c2pq5dw5vwq" path="res://MovingPlatform.tscn" id="6_1xjbt"]
 [ext_resource type="PackedScene" uid="uid://bgathiphlllcf" path="res://MovingPlatform1.tscn" id="7_vy3yb"]
 
@@ -210,9 +211,9 @@ format = 2
 layer_0/z_index = -1
 layer_0/tile_data = PackedInt32Array(721017, 917504, 0, 786553, 917504, 1, 852089, 917504, 2, 917625, 917504, 3, 721018, 983040, 0, 786554, 983040, 1, 852090, 983040, 2, 917626, 983040, 3, 721019, 1048576, 0, 786555, 1048576, 1, 852091, 1048576, 2, 917627, 1048576, 3, 721020, 1114112, 0, 786556, 1114112, 1, 852092, 1114112, 2, 917628, 1114112, 3, 786557, 1179648, 1, 852093, 1179648, 2, 917629, 1179648, 3, 589825, 524288, 1, 655361, 524288, 2, 589826, 589824, 1, 655362, 589824, 2, 720898, 589824, 3, 589827, 655360, 1, 655363, 655360, 2, 589851, 655360, 5, 589852, 720896, 5, 589853, 589824, 5, 458784, 786432, 3, 786468, 589824, 5, 720940, 1114112, 6, 786476, 1114112, 7, 786477, 1179648, 7, 720915, 589824, 5, 917604, 720896, 2, 983140, 720896, 3, 917605, 786432, 2, 983141, 786432, 3, 393247, 720896, 2, 458783, 720896, 3, 393248, 786432, 2, 917619, 589824, 7, 917620, 655360, 7, 917621, 720896, 7, 1048683, 589824, 5, 917606, 1114112, 6, 983142, 1114112, 7, 983143, 1179648, 7, 720902, 720896, 5, 720901, 655360, 5, 720945, 655360, 5, 720946, 720896, 5)
 
-[node name="Marlon_Mogger" parent="." unique_id=584658369 instance=ExtResource("2_va7m3")]
+[node name="Marlon_Mogger" parent="." unique_id=584658369 groups=["Marlon_Mogger"] instance=ExtResource("2_va7m3")]
 z_index = 1
-position = Vector2(16, 181)
+position = Vector2(1901, 220)
 
 [node name="Camera2D" type="Camera2D" parent="Marlon_Mogger" unique_id=419588120]
 zoom = Vector2(4, 4)
@@ -229,10 +230,10 @@ layer_0/tile_data = PackedInt32Array(1835062, 262144, 2, 1835063, 131072, 0, 183
 
 [node name="ColorRect" type="ColorRect" parent="TileMap" unique_id=51552670]
 z_index = -11
-offset_left = -190.0
-offset_top = -45.0
-offset_right = 2252.0
-offset_bottom = 686.0
+offset_left = -268.0
+offset_top = -362.0
+offset_right = 2340.0
+offset_bottom = 735.0
 color = Color(0.9218295, 0.9747248, 0.9743343, 1)
 
 [node name="KillZone" parent="." unique_id=928650286 instance=ExtResource("4_d1jbf")]
@@ -252,4 +253,8 @@ position = Vector2(1184, 257)
 [node name="MovingPlotform2" parent="." unique_id=908894527 instance=ExtResource("7_vy3yb")]
 position = Vector2(1339, 257)
 
+[node name="Area2D" parent="." unique_id=1243001115 instance=ExtResource("5_1405j")]
+position = Vector2(1961, 237)
+
 [connection signal="body_entered" from="KillZone" to="KillZone" method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Marlon_Mogger" method="_on_area_2d_body_entered"]
