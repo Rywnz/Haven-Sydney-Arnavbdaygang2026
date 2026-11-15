@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d2hsflmjn1osq"]
+
+[ext_resource type="AudioStream" uid="uid://coskdsjf7i4nq" path="res://Assets/Elden Ring - Opening(OST - Official Soundtrack Music) - AnimaFusion (128k).ogg" id="1_4aryd"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=1142061636]
+stream = ExtResource("1_4aryd")
+volume_db = 11.333
+autoplay = true

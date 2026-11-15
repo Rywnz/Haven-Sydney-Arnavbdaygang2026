@@ -214,7 +214,7 @@ layer_0/tile_data = PackedInt32Array(721017, 917504, 0, 786553, 917504, 1, 85208
 
 [node name="Marlon_Mogger" parent="." unique_id=584658369 instance=ExtResource("2_va7m3")]
 z_index = 1
-position = Vector2(16, 181)
+position = Vector2(60, 182)
 
 [node name="Camera2D" type="Camera2D" parent="Marlon_Mogger" unique_id=419588120]
 zoom = Vector2(4, 4)
@@ -231,10 +231,10 @@ layer_0/tile_data = PackedInt32Array(1835062, 262144, 2, 1835063, 131072, 0, 183
 
 [node name="ColorRect" type="ColorRect" parent="TileMap" unique_id=51552670]
 z_index = -11
-offset_left = -190.0
-offset_top = -45.0
-offset_right = 2252.0
-offset_bottom = 686.0
+offset_left = -259.0
+offset_top = -123.0
+offset_right = 2183.0
+offset_bottom = 608.0
 color = Color(0.9218295, 0.9747248, 0.9743343, 1)
 
 [node name="KillZone" parent="." unique_id=928650286 instance=ExtResource("4_d1jbf")]
@@ -260,5 +260,3 @@ position = Vector2(1955, 234)
 [node name="PSL_HUD" parent="." unique_id=1970473799 instance=ExtResource("9_ivlpf")]
 offset = Vector2(122.925, 100.315)
 transform = Transform2D(1, 0, 0, 1, 122.925, 100.315)
-
-[connection signal="body_entered" from="KillZone" to="KillZone" method="_on_body_entered"]

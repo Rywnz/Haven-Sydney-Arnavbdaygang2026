@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://u7c1f0bmws0y"]
 
-[ext_resource type="Script" uid="uid://b48flde7a6sq2" path="res://control.gd" id="1_iy66r"]
+[ext_resource type="Script" uid="uid://i0vrtf1ay0co" path="res://Assets/MAINMENU.gd" id="1_iy66r"]
 [ext_resource type="VideoStream" uid="uid://bgmwx0rxbcx1g" path="res://Assets/BP RUSHERS-2.ogv" id="2_iy66r"]
 
-[node name="Control" type="Control" unique_id=646926933]
+[node name="MAINMENU" type="Control" unique_id=646926933]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

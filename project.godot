@@ -12,7 +12,7 @@ config_version=5
 
 config/name="BP-Rushers"
 config/description="A knight goes from psl 0 to psl 10 by chasing Clavicular around the world"
-run/main_scene="res://control.tscn"
+run/main_scene="uid://u7c1f0bmws0y"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 
 GlobalReset="*uid://cxe5u8s0y0mok"
 PSLManager="*uid://b6vc1m4faumuo"
+AudioStreamPlayer2d="*uid://d2hsflmjn1osq"
 
 [display]
 
