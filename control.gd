@@ -1,9 +1,12 @@
 extends Control
 
-func _on_start_game_pressed() -> void:
-	get_tree().change_scene_to_file("res://Level 1.tscn") 
+@onready var bar = $PSLBar
+@onready var label = $PSLLabel
 
+func _ready() -> void:
+	PSLManager.psl_changed.connect(update_bar)
+	update_bar()
 
-func _on_quit_pressed() -> void:
-	print("Quit button was clicked!")
-	get_tree().quit()
+func update_bar() -> void:
+	bar.value = PSLManager.psl
+	label.text = "PSL: " + str(PSLManager.psl) + "/8"
