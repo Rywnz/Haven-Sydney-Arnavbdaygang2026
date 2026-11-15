@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dto2yu4r4ow2l"]
+
+[node name="Dialogue" type="CanvasLayer" unique_id=1759000804]
+
+[node name="Control" type="Control" parent="." unique_id=1280401492]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Control" unique_id=1348680553]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -87.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Control/Panel" unique_id=441759145]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 5.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+text = "Oh you are too powerfull. I thought you could never mog me but you managed to bounce back. You are the true embodiement of BP I respect you.
+You are now rank 1 mogger again.
+Marlon you have bounced back, you are a true mogger"
