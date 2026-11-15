@@ -51,3 +51,4 @@ func _input(event: InputEvent) -> void:
 			print("Teleported!")
 		else:
 			print("ERROR: Could not find start_spot!")
+			

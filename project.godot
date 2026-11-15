@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GlobalReset="*uid://cxe5u8s0y0mok"
+PSLManager="*uid://b6vc1m4faumuo"
 
 [display]
 
