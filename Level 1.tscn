@@ -5,6 +5,7 @@
 [ext_resource type="TileSet" uid="uid://c07oji4pww65w" path="res://Assets/clouds.tres" id="3_gvvdy"]
 [ext_resource type="Script" uid="uid://h4mmjgbnqvdc" path="res://camera_2d.gd" id="3_hi2wx"]
 [ext_resource type="PackedScene" uid="uid://dx0hv4ggis6rl" path="res://kill_zone.tscn" id="4_d1jbf"]
+[ext_resource type="PackedScene" uid="uid://cx7kiqehaiast" path="res://Level_1_teleporter.tscn" id="5_1405j"]
 [ext_resource type="PackedScene" uid="uid://c0c2pq5dw5vwq" path="res://MovingPlatform.tscn" id="6_1xjbt"]
 [ext_resource type="PackedScene" uid="uid://bgathiphlllcf" path="res://MovingPlatform1.tscn" id="7_vy3yb"]
 
@@ -251,5 +252,8 @@ position = Vector2(1184, 257)
 
 [node name="MovingPlotform2" parent="." unique_id=908894527 instance=ExtResource("7_vy3yb")]
 position = Vector2(1339, 257)
+
+[node name="Area2D" parent="." unique_id=1243001115 instance=ExtResource("5_1405j")]
+position = Vector2(1955, 234)
 
 [connection signal="body_entered" from="KillZone" to="KillZone" method="_on_body_entered"]
